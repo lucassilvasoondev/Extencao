@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Product Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #A020F0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #A020F0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#banner {
+    background-color: #A020F0;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#banner h2 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: rgb(8, 8, 8);
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#Extenções {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#Extenções h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.Extenções-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.Extenções-card {
+    background:  rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+}
+
+.Extenções-card img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.Extenções-card h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.Extenções-card p {
+    color: white;
+}
+
+.Extenções-card .price {
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background: #A020F0;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #banner {
+        padding: 60px 0;
+    }
+
+    #banner h2 {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .Extenções-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Extenções-card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #banner h2 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+    }
+
+    .Extenções-card {
+        padding: 15px;
+    }
+
+    .Extenções-card h3 {
+        font-size: 1.2em;
+    }
+
+    .Extenções-card p {
+        font-size: 0.9em;
+    }
+
+    footer .social-media a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Jamile Silva | Lash Designer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Inicio">Início</a></li>
+                    <li><a href="#Extenções">Extenções</a></li>
+                    <li><a href="https://www.instagram.com/jamilesilva.cilios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                    <li><a href="https://wa.me/5511948282818?text=Ol%C3%A1%21+Qual+dia+e+hor%C3%A1rio+voc%C3%AA+tem+disponivel%3F" target="_blank">WhatsApp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container">
+            <img src="" alt="">
+            <h2>CÍLIOS GUARULHOS | LASH LIFTHING | HYDRA GLOSS</h2>
+            <p>Clique abaixo e agende seu horário:</p>
+            <a href="https://wa.me/5511948282818?text=Ol%C3%A1%21+Qual+dia+e+hor%C3%A1rio+voc%C3%AA+tem+disponivel%3F" class="btn">Agende Aqui</a>
+        </div>
+    </section>
+
+    <section id="Extenções" class="container">
+        <h2>Nossas Extensões:</h2>
+        <br>
+        <div class="Extenções-grid">
+            <div class="Extenções-card">
+                <img src="c:\Users\tr4lu\Downloads\cilios2.png" alt="Product 1">
+                <h3>Volume Russo</h3>
+                <p>Volume Russo</p>
+                <p class="price">R$: 130,00</p>
+                <a href="https://wa.me/5511948282818?text=Ol%C3%A1%21+Qual+dia+e+hor%C3%A1rio+voc%C3%AA+tem+disponivel%3F" class="btn">Agende já</a>
+            </div>
+            <div class="Extenções-card">
+                <img src="c:\Users\tr4lu\Downloads\cilios3.png" alt="Product 2">
+                <h3>Volume Brasileiro</h3>
+                <p>Volume Brasileiro</p>
+                <p class="price">R$: 100,00</p>
+                <a href="https://wa.me/5511948282818?text=Ol%C3%A1%21+Qual+dia+e+hor%C3%A1rio+voc%C3%AA+tem+disponivel%3F" class="btn">Agende já</a>
+            </div>
+            <div class="Extenções-card">
+                <img src="c:\Users\tr4lu\Downloads\cilios4.png" alt="Product 3">
+                <h3>Fio a Fio</h3>
+                <p>Fio a Fio</p>
+                <p class="price">R$: 120,00</p>
+                <a href="https://wa.me/5511948282818?text=Ol%C3%A1%21+Qual+dia+e+hor%C3%A1rio+voc%C3%AA+tem+disponivel%3F" class="btn">Agende já</a>
+            </div>
+            <div class="Extenções-card">
+                <img src="c:\Users\tr4lu\Downloads\cilios1.png" alt="Product 4">
+                <h3>Manutenção</h3>
+                <p>Coça o olho não cacete</p>
+                <p class="price">R$: 80,00</p>
+                <a href="https://wa.me/5511948282818?text=Ol%C3%A1%21+Qual+dia+e+hor%C3%A1rio+voc%C3%AA+tem+disponivel%3F" class="btn">Agende já</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyProductSite. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
